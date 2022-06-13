@@ -1,0 +1,90 @@
+/*lg*/
+@media (min-width:992px) and (max-width:1199.99px){
+   #banner .banner_slider_item {
+      height: 700px;
+   }
+   #banner .banner_content h1 {
+      font-size: 58px;
+      letter-spacing: 23px;
+   }
+   #about {
+      padding: 60px 0 55px;
+   }
+   #service {
+      background-position: center;
+   }
+}
+
+/*md*/
+@media (min-width:768px) and (max-width:991.99px){
+   #banner .banner_content h4 {
+      font-size: 25px;
+   }
+   #banner .banner_content h1 {
+      font-size: 40px;
+      letter-spacing: 18px;
+   }
+   #banner .banner_slider_item {
+      height: 620px;
+   }
+
+   #about .about_item_box div[class^="col"]:nth-child(2n) {
+      border-color: transparent;
+    }
+    #service{
+       background-image: initial;
+    }
+}
+
+/*sm*/
+@media (min-width:576px) and (max-width:767.99px){
+    /* responsive banner letter */
+   #banner .banner_content h1 {
+       font-size: 30px;
+       
+       letter-spacing: 9px;
+       
+   }
+   #banner .banner_content h4 {
+       font-size: 18px;
+       
+   }
+   /* padding reduce */
+   #about {
+       padding: 40px 0 20px;
+   }
+   /* banner size */
+   #banner .banner_slider_item {
+       height: 690px;
+   }
+}
+
+/*xs*/
+@media (max-width:575.99px){
+    /* tittle reduce */
+   #banner .banner_content h1 {
+       font-size: 10px;
+       
+       letter-spacing: 4px;
+       
+   }
+   #banner .banner_content h4 {
+       font-size: 10px;
+       
+   }
+   /* padding reduce */
+   #about {
+       padding: 20px 0 10px;
+   }
+   /* banner size */
+   #banner .banner_slider_item {
+       height: 620px;
+   }
+
+}
+
+@media (min-width:576px) and (max-width:991.99px){
+   #about .about_item_box div[class^="col"]:nth-child(2n) {
+      border-color: transparent;
+    }
+}

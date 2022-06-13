@@ -1,0 +1,278 @@
+/*
+   Template Name: MyFolio
+   Author: Creative IT
+   Template Designer:
+   Author URI:
+   Version:1.0.0
+
+
+   Table of Content
+   ==============================
+   1) Navbar
+*/
+
+/* Common Css Start */
+body{
+   font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+ul,
+ol{
+   margin: 0;
+   padding: 0;
+}
+ul,
+ol{
+   list-style-type: none;
+}
+a,
+a:hover{
+   text-decoration: none;
+}
+.secInfo h2{
+   font-size: 46px;
+   font-weight: 800;
+   text-transform: uppercase;
+   color: #02918c;
+}
+.secInfo p{
+   font-size: 16px;
+   line-height: 41px;
+   color: #7e8287;
+   /* margin-bottom: 80px; */
+}
+.secInfo p span{
+   font-size: 23px;
+   font-weight: 800;
+ }
+ /* //Common Css End */
+ 
+ /* Nav Section Css Start */
+#nav{
+   background-color: #02918c;
+}
+#nav #main_menu ul li a{
+   font-size: 12px;
+   font-weight: 800;
+   color: #fff;
+   padding: 12px 25px;
+   margin: 2px 0;
+   -webkit-transition: all linear 0.5s;
+   -o-transition: all linear 0.5s;
+   transition: all linear 0.5s;
+}
+#nav #main_menu ul li:hover a{
+   background-color: #cfc91d;
+   color: #02918c;
+   border-radius: 50px;
+}
+ /* //Nav Section Css End */
+ 
+ /* Banner Section Css Start */
+#banner .banner_slider_item{
+   height: 761px;
+   background-size: cover !important;
+   background-position: center !important;
+   position: relative;
+   z-index: 1;
+   color: #fff;
+}
+#banner .banner_slider_item::after{
+   position: absolute;
+   content: "";
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: -1;
+   inset: 0;
+}
+#banner .banner_content h4{
+   font-size: 30px;
+
+   font-weight: 400;
+}
+#banner .banner_content h1{
+   font-size: 68px;
+   font-weight: 800;
+   letter-spacing: 30px;
+   text-transform: uppercase;
+}
+#banner .banner_content p{
+   font-size: 18px;
+ }
+#banner .banner_content img{
+   margin: 38px auto;
+}
+#banner .banner_content a{
+   font-size: 14px;
+   font-weight: 800;
+   color: #0b1016;
+   background-color: #cfc91d;
+   padding: 14px 57px;
+   display: inline-block;
+   -webkit-transition: all linear 0.5s;
+   -o-transition: all linear 0.5s;
+   transition: all linear 0.5s;
+}
+#banner .banner_content a:hover{
+   border-radius: 15px;
+   background-color: #02918c;
+ }
+ /* //Banner Section Css End */
+ 
+ /* About Section Css Start */
+#about{
+   padding: 80px 0 60px;
+}
+#about .about_item_box{
+   margin-top: 50px;
+}
+#about .about_item_box div[class^="col"]{
+   border-right: 1px solid #333;
+}
+#about .about_item_box div[class^="col"]:last-child{
+   border-color: transparent;
+}
+#about .about_item{
+   padding: 35px 40px;
+}
+#about .about_item i{
+   font-size: 30px;
+   color: #02918c;
+}
+#about .about_item h5{
+   font-size: 16px;
+   font-weight: 800;
+   color: #7e8287;
+   margin: 30px 0;
+ }
+#about .about_item p{
+   font-size: 11px;
+   line-height: 21px;
+   color: #7e8287;
+}
+ /* //About Section Css End */
+ 
+ /* Service Section Css Start */
+#service{
+   padding: 80px 0 40px;
+   background:#F0F0E8 url(../img/services_banner.png);
+   background-size: cover;
+   background-position: right center;
+}
+#service .secInfo{
+   padding-right: 40px;
+}
+#service .service_item_box{
+   margin-top: 50px;
+}
+#service .service_item{
+   padding-right: 40px;
+   margin-bottom: 57px;
+}
+#service .service_item i{
+   font-size: 30px;
+   color: #02918c;
+}
+#service .service_item h5{
+   font-size: 16px;
+   font-weight: 800;
+   color: #7e8287;
+   margin: 20px 0;
+}
+#service .service_item p{
+   font-size: 11px;
+   line-height: 21px;
+   color: #7e8287;
+}
+ /* //Service Section Css End */
+ 
+ /* My Work Section Css Start */
+#work {
+   padding: 80px 0;
+}
+#work .work_item {
+   position: relative;
+}
+#work .work_item .overlay{
+   position: absolute;
+   inset: 20px;
+   background-color: #02918cb0;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   padding: 20px;
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(0);
+   transform-origin: middle;
+   -webkit-transition: all linear 0.5s;
+   -o-transition: all linear 0.5s;
+   transition: all linear 0.5s;
+}
+#work .work_item:hover .overlay{
+   opacity: 1;
+   transform: scale(1);
+   visibility: visible;
+}
+#work .work_item .overlay .overlay_content h5{
+   font-size: 16px;
+   font-weight: 800;
+   color: #fff;
+   line-height: 23px;
+   margin-bottom: 10px;
+}
+#work .work_item .overlay .overlay_content p{
+   font-size: 13px;
+   line-height: 21px;
+}
+ /* //My Work Section Css End */
+ 
+ /* Contact Section Css Start */
+#contact .secInfo{
+   margin-bottom: 50px;
+}
+#contact .contact_form{
+   background-color: #0b0b0b;
+   padding: 63px 112px;
+}
+#contact .contact_form .form-control{
+   background: none;
+   border: none;
+   border-bottom: 1px solid #898989;
+   border-radius: 0;
+   margin-bottom: 50px;
+   color: #fff;
+   text-align: center;
+}
+#contact .contact_form .form-control:focus{
+   box-shadow: none;
+}
+#contact .contact_form button{
+   font-size: 14px;
+   font-weight: 800;
+   text-transform: uppercase;
+   color: #0b1016;
+   background-color: #cfc91d;
+   padding: 15px 65px;
+   border: 0 !important;
+}
+#contact .contact_form button:focus{
+   box-shadow: none;
+}
+#contact .contact_form button:hover{
+   border: 0 !important;
+   background-color: #02918c;
+}
+ /* //Contact Section Css End */
+ 
+ /* Footer Section Css Start */
+footer{
+   background:black;
+}
+ /* //Footer Section Css End */
